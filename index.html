@@ -37,7 +37,25 @@
             </div>
          </nav>
       </div>
+      <ul class="sidenav" id="nav-mobile"> 
+                                        <li href="#home">
+                                            <a> Home </a>
+                                        </li>
+                                        <li href="#search">
+                                        <a> Search </a>
+                                        </li>
+                                        <li href="#topics">
+                                        <a> Topics </a>
+                                        </li>
+                                        <li href="#questions">
+                                        <a> Questions </a>
+                                        </li>
+    </ul>
       <!-- Compiled and minified JavaScript -->
       <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+      <script class="text/javascript">
+        const sideNav = document.querySelector('.sidenav');
+        M.Sidenav.init(sideNav,{});
+      </script>
    </body>
 </html>
