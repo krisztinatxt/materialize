@@ -51,12 +51,43 @@
                                         <a> Questions </a>
                                         </li>
     </ul>
+    <div class="slider">
+    <ul class="slides">
+      <li>
+        <img src="media/1.jpg"> <!-- random image -->
+        <div class="caption center-align">
+          <h3>Coding stock photo</h3>
+          <h5 class="light grey-text text-lighten-3">It was for free</h5>
+        </div>
+      </li>
+      <li>
+        <img src="media/2.jpg"> <!-- random image -->
+        <div class="caption left-align">
+          <h3>Left Align Version</h3>
+          <h5 class="light grey-text text-lighten-3"> With a subtitle</h5>
+        </div>
+      </li>
+      <li>
+        <img src="media/3.jpg"> <!-- random image -->
+        <div class="caption right-align">
+          <h3>Right Aligned Version</h3>
+          <h5 class="light grey-text text-lighten-3">With an other one</h5>
+        </div>
+      </li>
+      </ul>
+  </div>
     
       <!-- Compiled and minified JavaScript -->
       <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
       <script class="text/javascript">
+      //Sidenav initialization
         const sideNav = document.querySelector('.sidenav');
         M.Sidenav.init(sideNav,{});
+        //Carousel-slidebox init
+        document.addEventListener('DOMContentLoaded', function() {
+        var elems = document.querySelectorAll('.slider');
+        var instances = M.Slider.init(elems, {});
+        });
       </script>
    </body>
 </html>
