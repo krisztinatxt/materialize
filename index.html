@@ -101,10 +101,11 @@
         const sideNav = document.querySelector('.sidenav');
         M.Sidenav.init(sideNav,{});
         //Carousel-slidebox init
-        document.addEventListener('DOMContentLoaded', function() {
-        var elems = document.querySelectorAll('.slider');
-        var instances = M.Slider.init(elems, {});
-        });
+        //Hide the sliders
+         const slider = document.querySelector('.slider');
+         M.Slider.init(slider, {
+        indicators: false,
+      });
       </script>
    </body>
 </html>
