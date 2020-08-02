@@ -29,9 +29,6 @@
                         <li href="#topics">
                          <a> Topics </a>
                         </li>
-                        <li href="#questions">
-                         <a> Questions </a>
-                        </li>
                     </ul>
                 </div>
             </div>
@@ -47,12 +44,10 @@
                                         <li href="#topics">
                                         <a> Topics </a>
                                         </li>
-                                        <li href="#questions">
-                                        <a> Questions </a>
-                                        </li>
+                                        
     </ul>
 <!--Slider materialbox-->
-  <section class="slider">
+  <section class="slider" id="home">
     <ul class="slides">
       <li>
         <img src="media/1.jpg" alt="">
@@ -81,7 +76,7 @@
     </ul>
   </section>
   <!--Search bar-->
-  <section id="search" class="section section-search teal darken-1 white-text center">
+  <section id="search" class="section search teal darken-1 white-text center scrollspy" id="search">
     <div class="container">
       <div class="row">
         <div class="col s12">
@@ -95,7 +90,7 @@
   </section>
 
 <!--Topics -->
- <section class="section section-topics grey lighten-2 center">
+ <section class="section topics grey lighten-2 center scrollspy" id="topics">
     <div class="container">
       <div class="row">
         <div class="col s12 m3">
@@ -129,6 +124,7 @@
       </div>
     </div>
   </section>
+  
     
       <!-- Compiled and minified JavaScript -->
       <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
@@ -142,6 +138,9 @@
          M.Slider.init(slider, {
         indicators: false,
       });
+      //Scrollspy for navbar
+       const ss = document.querySelectorAll('.scrollspy');
+       M.ScrollSpy.init(ss, {});
       </script>
    </body>
 </html>
